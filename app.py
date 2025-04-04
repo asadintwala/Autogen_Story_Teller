@@ -34,7 +34,7 @@ if not config_valid:
     st.code("""
     # config/config.toml
     api_key = "YOUR_GEMINI_API_KEY"
-    model_name = "gemini-pro"
+    model_name = "gemini-2.0-flash"
     """)
     st.stop()
 

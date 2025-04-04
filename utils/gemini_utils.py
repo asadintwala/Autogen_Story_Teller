@@ -27,8 +27,8 @@ def generate_text_gemini(prompt, config_path="config/config.toml", max_retries=3
         return f"Configuration error: {str(e)}"
     
     # Print debug information
-    print(f"Using model: {model_name}")
-    print(f"API key (first 4 chars): {api_key[:4]}...")
+    # print(f"Using model: {model_name}")
+    # print(f"API key (first 4 chars): {api_key[:4]}...")
     
     retries = 0
     while retries < max_retries:
@@ -58,9 +58,9 @@ def generate_text_gemini(prompt, config_path="config/config.toml", max_retries=3
             
             # Generate content with more detailed parameters
             generation_config = {
-                "temperature": 0.7,
-                "top_p": 0.95,
-                "top_k": 40,
+                "temperature": 0.7, # to generate more deterministiv yet creative & diverse(lengthy) output
+                "top_p": 0.95, # more lengthy and diverse response
+                "top_k": 40, # for more diverse words
                 "max_output_tokens": 2048,
             }
             

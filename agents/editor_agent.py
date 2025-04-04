@@ -1,7 +1,7 @@
-from autogen import AssistantAgent
+from autogen import AssistantAgent # Multi-agent ai system that collaborate to solve tasks efficiently
 from utils.gemini_utils import generate_text_gemini
 
-class EditorAgent(AssistantAgent):
+class EditorAgent(AssistantAgent): # Respond to msgs, assist in tasks, interact with other agents
     def __init__(self, name="Editor",
         system_message="You are a professional editor. You give feedback on content. Focus on grammar, clarity, and style.",
         **kwargs):

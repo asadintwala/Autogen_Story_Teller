@@ -1,0 +1,67 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.venv/
+.env/
+
+# IDE/editor config files
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Logs and local settings
+logs/
+*.log
+*.out
+*.err
+nohup.out
+.DS_Store
+
+# Environment variables and credentials
+.env
+*.secrets
+config.json
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Python package dependencies
+*.egg-info/
+dist/
+build/
+pip-log.txt
+
+# MongoDB and database dumps
+dump.rdb
+*.sqlite
+*.db
+*.json
+*.csv
+
+# Streamlit cache & session data
+.streamlit/
+.db.sqlite
+
+# FastAPI cache
+__pydantic_cache__/
+
+# CrewAI & AutoGen generated files
+*.autosave
+.cache/
+tmp/
+
+# Pytest and test artifacts
+htmlcov/
+.coverage
+.cache/
+.pytest_cache/
+
+# Ignore compiled C extensions
+*.so
+*.dylib
+*.dll

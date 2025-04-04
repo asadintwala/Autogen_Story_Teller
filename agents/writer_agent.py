@@ -13,5 +13,6 @@ class WriterAgent(AssistantAgent):
 
     def generate_story(self, prompt):
         print(f"WriterAgent.generate_story called with prompt: {prompt[:50]}...")  # Debugging
+        # To ensure the model that it needs to generate the story
         story_prompt = f"Write a creative short story based on this prompt: {prompt}"
-        return generate_text_gemini(story_prompt)
+        return generate_text_gemini(story_prompt) # Send prompt to GEMINI, it'll return the generated story
